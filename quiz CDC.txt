@@ -1,0 +1,263 @@
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git status
+fatal: Not a git repository (or any parent up to mount point /media/fahad/0C9A0BF00C9A0BF0)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git init
+Initialized empty Git repository in /media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz/.git/
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ touch file.txt
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ status
+unity-settings-daemon start/running, process 2500
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git add file.txt 
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	status
+	stage
+	stash
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   file.txt
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git commit -m "This is the first version" 
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'fahad@fahad-HP-ProBook-4540s.(none)')
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'fahad@fahad-HP-ProBook-4540s.(none)')
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git config --global user.email "i130024@nu.edu.pk"
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git config --global user.name "Fahad"
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git commit -m "This is the first version" 
+[master (root-commit) 4608350] This is the first version
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git status
+On branch master
+nothing to commit, working directory clean
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote add -u
+error: unknown switch `u'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote add -u https://github.com/fahadahmed802/CDC.git
+error: unknown switch `u'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote set-url https://github.com/fahadahmed802/CDC.git
+
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote  https://github.com/fahadahmed802/CDC.git
+error: Unknown subcommand: https://github.com/fahadahmed802/CDC.git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote master  https://github.com/fahadahmed802/CDC.git
+
+error: Unknown subcommand: master
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote master https://github.com/fahadahmed802/CDC.git
+error: Unknown subcommand: master
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote -v  https://github.com/fahadahmed802/CDC.git
+error: Unknown subcommand: https://github.com/fahadahmed802/CDC.git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote fahad  https://github.com/fahadahmed802/CDC.git
+error: Unknown subcommand: fahad
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote -v
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote add -u origin
+error: unknown switch `u'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ sudo git remote add -u origin
+[sudo] password for fahad: 
+error: unknown switch `u'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ sudo git remote add master https://github.com/fahadahmed802
+/CDC.git
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git remote -v
+master	https://github.com/fahadahmed802/CDC.git (fetch)
+master	https://github.com/fahadahmed802/CDC.git (push)
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git push -u CDC master
+fatal: 'CDC' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ sudo git remote add origin https://github.com/fahadahmed802/CDC.git
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ git push -u origin master
+Username for 'https://github.com': fahadahmed802
+Password for 'https://fahadahmed802@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 218 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/fahadahmed802/CDC.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+fahad@fahad-HP-ProBook-4540s://media/fahad/0C9A0BF00C9A0BF0/uni files/semester 8/CDC/Quizes/GitQuiz$ 
+
